@@ -12,6 +12,10 @@ p:last-child {
   margin-bottom: 0;
 }
 
+body {
+  margin: 0;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -27,8 +31,9 @@ button {
   cursor: pointer;
 }
 
-img {
+/* img {
   display: block;
   max-width: 100%;
-  height: auto;
-}
+  height: 100%;
+
+} */

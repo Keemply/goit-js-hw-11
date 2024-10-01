@@ -1,10 +1,12 @@
 export function render(arrayObjects) {
-  console.log(arrayObjects);
+  if (arrayObjects.length === 0) {
+    throw new Error(response);
+  }
 
   const insert = arrayObjects
     .map(
       object => `<li class="gallery-object">
-    <img src=${object.webformatURL} class="gallery-image" />
+    <a href='${object.largeImageURL}' class="simple-gal"><img src='${object.webformatURL}' class="gallery-image" alt='${object.tags}' /></a>
     <ul class="gallery-stats">
     <li class="gallery-stats-likes">Likes <span>${object.likes}</span></li>
     <li class="gallery-stats-views">Views <span>${object.views}</span></li>

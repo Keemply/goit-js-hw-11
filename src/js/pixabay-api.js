@@ -5,6 +5,7 @@ export function apiRequest(searchInput) {
     image_type: 'photo',
     orientation: 'horizontal',
     safesearch: 'true',
+    per_page: 21,
   });
 
   return fetch(`https://pixabay.com/api/?${optionsApi.toString()}`).then(
@@ -12,6 +13,7 @@ export function apiRequest(searchInput) {
       if (!response.ok) {
         throw new Error(response.status);
       }
+
       return response.json();
     }
   );

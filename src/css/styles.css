@@ -51,6 +51,7 @@ input:focus {
 /* Gallery */
 .gallery {
   margin: 0 auto;
+  text-align: center;
 }
 
 .gallery-list {
